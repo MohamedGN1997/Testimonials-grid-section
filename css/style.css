@@ -1,5 +1,25 @@
 *{margin: 0px; padding: 0px; box-sizing: border-box;}
-body{
-    font-family: 'Poppins', sans-serif;
-    background: #f5f5f5;
-} 
+:root{
+    --c-black:rgb(000,000,000);
+    --c-darkBlue:rgb(25, 32, 45);
+    --c-white:rgb(255,255,255);
+    --c-grey-100:rgb(231, 234, 238);
+    --c-grey-200:rgb(207, 207, 207);
+    --c-grey-400:rgb(103, 109, 126);
+    --c-grey-500:rgb(72, 85, 106);
+    --c-purple-50:rgb(237, 228, 255);
+    --c-purple-300:rgb(167, 117, 241);
+    --c-purple-500:rgb(115, 63, 200);
+    /* color of background */
+    --c-background:rgb(246, 245, 246);
+}
+/* start main */
+body{max-width: 1440px;margin: 0 auto;min-height: 100vh;background-color: var(--c-background);} 
+body main.wrapper{max-width: 375px;margin: 0px auto;}
+body main.wrapper .container{margin: 73px 35px;display: grid;grid-template-columns:1fr;grid-template-rows:450px 246px 226px 414px 503px; gap: 32px;}
+body main.wrapper .container section.section{padding: 32px;border-radius: 8px;box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.1);}
+body main.wrapper .container section.section-1{background-color:var(--c-purple-500) ;}
+body main.wrapper .container section.section-2{background-color:var(--c-grey-500);}
+body main.wrapper .container section.section-3{background-color:var(--c-white);}
+body main.wrapper .container section.section-4{background-color:var(--c-darkBlue);}
+body main.wrapper .container section.section-5{background-color:var(--c-white);}
